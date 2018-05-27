@@ -1,15 +1,15 @@
 package lwen;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
-@RibbonClient(name = "CLOUD-DEPT")
 @EnableEurekaClient
 @SpringBootApplication
-public class DeptConsumerApp81 {
+@MapperScan("lwen.dao")
+public class DeptApp8002 {
     public static void main(String[] args) {
-        SpringApplication.run(DeptConsumerApp81.class, args);
+        SpringApplication.run(DeptApp8002.class, args);
     }
 }

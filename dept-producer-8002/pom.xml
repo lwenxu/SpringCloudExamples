@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dept-producer-8001</artifactId>
-
+    <artifactId>dept-producer-8002</artifactId>
 
     <dependencies>
         <!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->

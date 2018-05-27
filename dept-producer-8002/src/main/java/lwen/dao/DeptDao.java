@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface DeptDao {
     @Select("select * from dept")
-    public List<Dept> findAll();
+    List<Dept> findAll();
 
     @Insert("insert into clouddb01.dept(name, db_name) values (#{name},database())")
     boolean insertDept(Dept dept);

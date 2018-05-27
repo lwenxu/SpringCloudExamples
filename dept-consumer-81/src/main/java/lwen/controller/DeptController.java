@@ -15,7 +15,9 @@ public class DeptController {
     @Autowired
     RestTemplate restTemplate;
 
-    private static final String PRODUCER_URL_PREFIX = "http://localhost:8001";
+    // private static final String PRODUCER_URL_PREFIX = "http://localhost:8001";
+    //由于我们现在的 producer 和 consumer 都在eureka中注册了，所以我们就可以直接使用服务名获取服务
+    private static final String PRODUCER_URL_PREFIX = "http://CLOUD-DEPT";
 
 
     @GetMapping("/dept/list")
