@@ -3,15 +3,13 @@ package lwen;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
-import rules.MyRuleConfig;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
-// @RibbonClient(name = "CLOUD-DEPT")
-@RibbonClient(name = "CLOUD-DEPT",configuration = MyRuleConfig.class)
+@EnableFeignClients("lwen.service")
 @EnableEurekaClient
 @SpringBootApplication
-public class DeptConsumerApp81 {
+public class DeptConsumerFeignApp82 {
     public static void main(String[] args) {
-        SpringApplication.run(DeptConsumerApp81.class, args);
+        SpringApplication.run(DeptConsumerFeignApp82.class, args);
     }
 }
