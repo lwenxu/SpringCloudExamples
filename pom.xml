@@ -18,6 +18,8 @@
         <module>dept-consumer-feign-82</module>
         <module>dept-producer-hystrix-8003</module>
         <module>dept-zuul-9527</module>
+        <module>dept-config-3344</module>
+        <module>dept-config-client-3345</module>
     </modules>
 
 
