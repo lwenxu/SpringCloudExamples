@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(value = "CLOUD-DEPT",configuration = MyRuleConfig.class)
+@FeignClient(value = "CLOUD-DEPT", configuration = MyRuleConfig.class, fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @GetMapping("/dept/list")

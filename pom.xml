@@ -16,6 +16,7 @@
         <module>eureka-server-7002</module>
         <module>dept-producer-8002</module>
         <module>dept-consumer-feign-82</module>
+        <module>dept-producer-hystrix-8003</module>
     </modules>
 
 
